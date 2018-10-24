@@ -1,0 +1,11 @@
+<div class = "container">
+        <h3>
+            Employees 
+          </h3>
+          <ul class="items">
+            <li (click)="onSelect(employee.id)" [class.selected]="isSelected(employee)"  *ngFor="let employee of employees">
+              <span class="badge">{{employee.id}}</span>{{employee.name}}
+            </li>
+          </ul>
+        </div>
+      
